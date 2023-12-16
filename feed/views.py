@@ -1,10 +1,15 @@
 from django.shortcuts import render
+from . models import Team
 
 # Create your views here.
 def home(request):
-    return render(request,'feed/home.html')
+    teams=Team.objects.all()
+    context={'teams':teams}
+    return render(request,'feed/home.html',context)
 def about(request):
-    return render(request,'feed/about.html')
+    team=Team.objects.all()
+    context={'team':team}
+    return render(request,'feed/about.html',context)
 def service(request):
     return render(request,'feed/service.html')
 def contact(request):
