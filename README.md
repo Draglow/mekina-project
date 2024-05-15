@@ -12,11 +12,11 @@
  6. Admin Panel: Admin dashboard to manage users, listings, and resolve disputes if any.
 
 <h1>Technologies Used</h1>
-1. Frontend: HTML, CSS, JavaScript (React)
-2. Backend: Python (Django)
-3. Database: PostgreSQL
-4. Authentication: Django's built-in authentication system
-5. Other Tools: Git for version control
+ 1. Frontend: HTML, CSS, JavaScript (React)
+ 2. Backend: Python (Django)
+ 3. Database: PostgreSQL
+ 4. Authentication: Django's built-in authentication system
+ 5. Other Tools: Git for version control
 
 <h1>Installation</h1>
 1. Clone the repository:
