@@ -4,24 +4,24 @@
 
 <h1>Features</h1>
 
- 1. User Authentication: Secure user registration and login system to ensure data privacy and security.
- 2. Car Listings: Browse through a wide range of car listings with detailed information including make, model, year, price, mileage, and more.
- 3. Search and Filter: Easily search for specific cars based on various criteria such as make, model, price range, etc.
- 4. Seller Profiles: View detailed profiles of car sellers, including their ratings and reviews from previous buyers.
- 5. Messaging System: Communicate directly with sellers to ask questions or negotiate deals.
- 6. Admin Panel: Admin dashboard to manage users, listings, and resolve disputes if any.
+ 1. <h5>User Authentication:</h5> Secure user registration and login system to ensure data privacy and security.
+ 2. <h5>Car Listings:</h5> Browse through a wide range of car listings with detailed information including make, model, year, price, mileage, and more.
+ 3. <h5>Search and Filter:</h5> Easily search for specific cars based on various criteria such as make, model, price range, etc.
+ 4. <h5>Seller Profiles:</h5> View detailed profiles of car sellers, including their ratings and reviews from previous buyers.
+ 5. <h5>Messaging System:</h5> Communicate directly with sellers to ask questions or negotiate deals.
+ 6. <h5>Admin Panel:</h5> Admin dashboard to manage users, listings, and resolve disputes if any.
 
 <h1>Technologies Used</h1>
 
- 1. Frontend: HTML, CSS, JavaScript (React)
- 2. Backend: Python (Django)
- 3. Database: PostgreSQL
- 4. Authentication: Django's built-in authentication system
- 5. Other Tools: Git for version control
+ 1. <h5>Frontend:</h5> HTML, CSS, JavaScript (React)
+ 2. <h5>Backend:</h5> Python (Django)
+ 3. <h5>Database:</h5> PostgreSQL
+ 4. <h5>Authentication:</h5> Django's built-in authentication system
+ 5. <h5>Other Tools:</h5> Git for version control
 
 <h1>Installation</h1>
 
-1. Clone the repository:
+1. <h5>Clone the repository:</h5>
  git clone https://github.com/Draglow/carspace-project.git
  
 2. Navigate to the project directory:
