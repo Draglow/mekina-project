@@ -4,12 +4,12 @@
 
 <h1>Features</h1>
 
- 1. <h5>User Authentication:</h5> Secure user registration and login system to ensure data privacy and security.
- 2. <h5>Car Listings:</h5> Browse through a wide range of car listings with detailed information including make, model, year, price, mileage, and more.
- 3. <h5>Search and Filter:</h5> Easily search for specific cars based on various criteria such as make, model, price range, etc.
- 4. <h5>Seller Profiles:</h5> View detailed profiles of car sellers, including their ratings and reviews from previous buyers.
- 5. <h5>Messaging System:</h5> Communicate directly with sellers to ask questions or negotiate deals.
- 6. <h5>Admin Panel:</h5> Admin dashboard to manage users, listings, and resolve disputes if any.
+ 1. <h5>User Authentication:</h5> . Secure user registration and login system to ensure data privacy and security.
+ 2. <h5>Car Listings:</h5> . Browse through a wide range of car listings with detailed information including make, model, year, price, mileage, and more.
+ 3. <h5>Search and Filter:</h5> . Easily search for specific cars based on various criteria such as make, model, price range, etc.
+ 4. <h5>Seller Profiles:</h5> . View detailed profiles of car sellers, including their ratings and reviews from previous buyers.
+ 5. <h5>Messaging System:</h5> . Communicate directly with sellers to ask questions or negotiate deals.
+ 6. <h5>Admin Panel:</h5> . Admin dashboard to manage users, listings, and resolve disputes if any.
 
 <h1>Technologies Used</h1>
 
