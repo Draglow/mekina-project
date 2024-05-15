@@ -1,6 +1,6 @@
-CarZone: Online Car Market
-  CarZone is a web-based platform designed to connect car buyers and sellers, 
-  making the process of buying or selling a car hassle-free and convenient.
+
+CarZone is a web-based platform designed to connect car buyers and sellers, 
+making the process of buying or selling a car hassle-free and convenient.
 
 Features
 1. User Authentication: Secure user registration and login system to ensure data privacy and security.
