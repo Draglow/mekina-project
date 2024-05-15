@@ -13,7 +13,7 @@
 
 <h1>Technologies Used</h1>
 
- 1. <h5>Frontend:</h5> HTML, CSS, JavaScript (React)
+ 1. <h4>Frontend:</h4> HTML, CSS, JavaScript (React)
  2. <h5>Backend:</h5> Python (Django)
  3. <h5>Database:</h5> PostgreSQL
  4. <h5>Authentication:</h5> Django's built-in authentication system
