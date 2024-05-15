@@ -1,6 +1,6 @@
 <h1>Carzone</h1>
- CarZone is a web-based platform designed to connect car buyers and sellers, 
- making the process of buying or selling a car hassle-free and convenient.
+    CarZone is a web-based platform designed to connect car buyers and sellers, 
+    making the process of buying or selling a car hassle-free and convenient.
 
 <h1>Features</h1>
 
