@@ -21,7 +21,7 @@
 
 <h1>Installation</h1>
 
-1. <h5>Clone the repository:</h5>
+1. Clone the repository:
  git clone https://github.com/Draglow/carspace-project.git
  
 2. Navigate to the project directory:
