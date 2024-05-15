@@ -1,6 +1,4 @@
 CarZone: Online Car Market
-
-  Welcome to CarZone, your ultimate destination for buying and selling cars online.
   CarZone is a web-based platform designed to connect car buyers and sellers, 
   making the process of buying or selling a car hassle-free and convenient.
 
