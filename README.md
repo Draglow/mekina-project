@@ -4,7 +4,7 @@
 
 <h1>Features</h1>
 
- 1. <h5>User Authentication:</h5> . Secure user registration and login system to ensure data privacy and security.
+ 1. <h3>User Authentication:</h3> . Secure user registration and login system to ensure data privacy and security.
  2. <h5>Car Listings:</h5> . Browse through a wide range of car listings with detailed information including make, model, year, price, mileage, and more.
  3. <h5>Search and Filter:</h5> . Easily search for specific cars based on various criteria such as make, model, price range, etc.
  4. <h5>Seller Profiles:</h5> . View detailed profiles of car sellers, including their ratings and reviews from previous buyers.
