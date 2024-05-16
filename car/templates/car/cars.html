@@ -1,5 +1,5 @@
 {% extends 'feed/base.html' %}
-
+{% block title %} | Car Inventory {% endblock%}
 {% block content %}
 {% load humanize %}
 <div class="sub-banner overview-bgi">
@@ -26,6 +26,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="car-box-3">
                             <div class="car-thumbnail">
+                                
                                 <a href="{% url 'detail_car' car.id %}" class="car-img">
                                     <div class="tag">For Rent</div>
                                     <div class="price-box">
@@ -137,11 +138,11 @@
                         <h3 class="sidebar-title">Search your desire car</h3>
                         <form action="{% url 'search' %}" method="">
                             <div class="form-group">
-                                <input type="text" name="keyword" placeholder="Search by name" class="form-control">
+                                <input type="text" name="keyword" placeholder="Search by name" class="form-control" id="first">
                             </div>
                             
                             <div class="form-group">
-                                <select class="form-control search-fields" name="model">
+                                <select class="form-control search-fields" name="model" id="first">
                                     <option selected="true" disabled="disabled">Model</option>
                                     {% for model in model_search %}
                                       <option value="{{model}}">{{model}}</option>
@@ -149,7 +150,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <select class="form-control search-fields" name="city">
+                                <select class="form-control search-fields" name="city" id="first">
                                     <option selected="true" disabled="disabled">Location</option>
                                     {% for city in city_search %}
                                       <option value="{{city}}">{{city}}</option>
@@ -157,7 +158,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <select class="form-control search-fields" name="year">
+                                <select class="form-control search-fields" name="year" id="first">
                                     <option selected="true" disabled="disabled">Year</option>
                                     {% for year in year_search %}
                                       <option value="{{year}}">{{year}}</option>
@@ -165,16 +166,16 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <select class="form-control search-fields" name="body_style">
+                                <select class="form-control search-fields" name="body_style" id="first">
                                     <option selected="true" disabled="disabled" >Select Type Of Car</option>
                                     {% for body_style in body_style_search %}
                                       <option value="{{body_style}}">{{body_style}}</option>
                                     {% endfor %}
                                 </select>
                             </div>
-                            <div class="range-slider clearfix">
+                            <div class="range-slider clearfix" style="color: black !important;">
                                             <label>Price</label>
-                                            <div data-min="0" data-max="150000"  data-min-name="min_price" data-max-name="max_price" data-unit="USD" class="range-slider-ui ui-slider" aria-disabled="false"></div>
+                                            <div style="color: black !important;" data-min="0" data-max="150000"  data-min-name="min_price" data-max-name="max_price" data-unit="USD" class="range-slider-ui ui-slider" aria-disabled="false"></div>
                                             <div class="clearfix"></div>
                                         </div>
                             <div class="form-group">

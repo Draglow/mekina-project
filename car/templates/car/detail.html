@@ -1,6 +1,6 @@
 {% extends 'feed/base.html' %}
 
-
+{% block title %} | {{detail.car_title}} {% endblock%}
 {% load static %}
 
 {% block content %}
@@ -24,6 +24,7 @@
                 <div class="car-details-section">
                     <!-- Heading start -->
                     <div class="heading-car clearfix">
+                        {% include 'component/message.html' %}
                         <div class="pull-left">
                             <h3>{{detail.car_title}}</h3>
                             <h6>
@@ -221,21 +222,31 @@
                         <div class="modal-content">
                           <div class="contact-dealer modal-header">
                             <!-- <h5 class="modal-title" id="inquiryModalLabel">Contact Dealer</h5> -->
-                            <img src="img/logos/logo-black-white.png">
+                            <center><img src="{% static 'img/logos/logo-black-white.png' %}"></center> 
                             <button type="button" class="close" data-dismiss="modal">
                               <span>&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
-                            <form action="#">
+                            <form action="{% url 'contact' %}" method="post">
+                                {% if user.is_authenticated %}
+                                    <input type="hidden" name="user_id" value="{{user.id}}">
+                                {% else %}
+                                    <input type="hidden" name="user_id" value="0">
+                                {% endif %}
+                                {% csrf_token %}
+                                <input type="hidden" name="car_id" value="{{detail.id}}">
                                 <div class="form-group">
                                   <label for="name" class="col-form-label">Hello, My Name is</label>
                                   <div class="row">
                                     <div class="col">
-                                      <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+                                      <input type="text" name="first_name" class="form-control" placeholder="First Name" id="first"
+                                      {% if user.is_authenticated %} value='{{user.first_name}}' {% endif %} required>
                                     </div>
                                     <div class="col">
-                                      <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+                                      <input type="text" name="last_name" class="form-control" placeholder="Last Name" id="first" 
+                                      
+                                      {% if user.is_authenticated %} value='{{user.last_name}}' {% endif %} required>
                                     </div>
                                   </div>
                                 </div>
@@ -249,17 +260,17 @@
                                     </div>
                                 
                                 <div class="form-group">
-                                  <input type="text" name="car_title" class="form-control" value="LAMBORGHINI HURACÁN." readonly>
+                                  <input type="text" name="car_title" class="form-control" value="{{detail.car_title}}" id="first" readonly>
                                 </div>
                                
                                 <div class="form-group">
                                   <label for="name" class="col-form-label">I live in</label>
                                   <div class="row">
                                     <div class="col">
-                                      <input type="text" name="city" class="form-control" placeholder="City" required>
+                                      <input type="text" name="city" class="form-control" placeholder="City"  id="first" required>
                                     </div>
                                     <div class="col">
-                                      <input type="text" name="state" class="form-control" placeholder="State" required>
+                                      <input type="text" name="state" class="form-control" placeholder="State"  id="first" required>
                                     </div>
                                   </div>
                                 </div>
@@ -268,18 +279,19 @@
                                   <div class="row">
                                     <div class="col">
                                         <label for="name" class="col-form-label">You can reach me by email at</label>
-                                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                      <input type="email" name="email" class="form-control" placeholder="Email Address"  id="first" 
+                                      {% if user.is_authenticated %} value="{{user.email}}" {% endif %} required>
                                     </div>
                                     <div class="col">
                                         <label for="phone" class="col-form-label">or by phone at</label>
-                                      <input type="text" name="phone" placeholder="Phone Number (optional)" class="form-control">
+                                      <input type="text" name="phone" placeholder="Phone Number (optional)"  id="first" class="form-control">
                                     </div>
                                   </div>
                                 </div>
 
                                 <div class="form-group">
                                   <label for="message" class="col-form-label">Add comments</label>
-                                  <textarea name="message" class="form-control" placeholder="Enter your message here (optional)"></textarea>
+                                  <textarea name="message" class="form-control" placeholder="Enter your message here (optional)" id="first"></textarea>
                                 </div>
                                 <hr>
                                 <input type="submit" value="Send" class="btn btn-block btn-danger">
@@ -293,13 +305,13 @@
                         <h5 class="sidebar-title">Get a Question?</h5>
                         <ul class="contact-info">
                             <li>
-                                <i class="flaticon-pin"></i>20/F Green Road, Dhanmondi
+                                <i class="flaticon-pin"></i>Addis ababa,Bole
                             </li>
                             <li>
-                                <i class="flaticon-mail"></i><a href="mailto:info@themevessel.com">info@themevessel.com</a>
+                                <i class="flaticon-mail"></i><a href="mailto:info@themevessel.com">dereje21@gmail.com</a>
                             </li>
                             <li>
-                                <i class="flaticon-phone"></i><a href="tel:+0477-85x6-552">+0477 85x6 552</a>
+                                <i class="flaticon-phone"></i><a href="tel:+0477-85x6-552">+251965708923</a>
                             </li>
                         </ul>
                         <div class="social-list clearfix">

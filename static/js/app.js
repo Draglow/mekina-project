@@ -108,19 +108,19 @@ $(function () {
                     $('.sticky-header').addClass('header-shrink');
                 }
                 if($('.do-sticky').length < 1) {
-                    $('.company-logo img').attr('src', 'img/logos/black-logo.png');
+                    $('.company-logo img').attr('src', '../static/img/logos/black-logo.png');
                 }
             }
             else {
                 $('.sticky-header').removeClass('header-shrink');
                 if($('.do-sticky').length < 1 && $('.fixed-header').length == 0 && $('.fixed-header2').length == 0) {
-                    $('.company-logo img').attr('src', 'img/logos/logo.png');
+                    $('.company-logo img').attr('src', '../static/img/logos/logo.png');
                 } else {
-                    $('.company-logo img').attr('src', 'img/logos/black-logo.png');
+                    $('.company-logo img').attr('src', '../static/img/logos/black-logo.png');
                 }
             }
         } else {
-            $('.company-logo img').attr('src', 'img/logos/black-logo.png');
+            $('.company-logo img').attr('src', '../static/img/logos/black-logo.png');
         }
     }
 
@@ -272,10 +272,10 @@ $(function () {
                 event = event;
                 var currentMin = parseInt(ui.values[0], 10);
                 var currentMax = parseInt(ui.values[1], 10);
-                $(this).children(".min-value").text( currentMin + " " + unit);
-                $(this).children(".max-value").text(currentMax + " " + unit);
-                $(this).children(".current-min").val(currentMin);
-                $(this).children(".current-max").val(currentMax);
+                $(this).find(".min-value").text(currentMin + " " + unit).css("color", "white");
+                $(this).find(".max-value").text(currentMax + " " + unit).css("color", "white");
+                $(this).find(".current-min").val(currentMin);
+                $(this).find(".current-max").val(currentMax);
             }
         });
 
@@ -479,3 +479,8 @@ $(function () {
         }
     }).trigger("resize");
 })(jQuery);
+
+
+setTimeout(function(){
+    $('message').fadeOut('slow');
+},4000)

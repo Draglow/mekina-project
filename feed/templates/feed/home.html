@@ -1,42 +1,45 @@
 {% extends 'feed/base.html' %}
 <!-- Main header end -->
+{% block title %} | Home {% endblock%}
 {% load static %}
 <!-- Banner start -->
 {% load humanize %}
 {% block content %}
+
+
 <div class="banner" id="banner">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner banner-slider-inner text-center">
             <div class="carousel-item banner-max-height active item-bg">
+                <img class="d-block w-100 h-100" src="{% static 'img/car-6.jpg' %}" alt="banner">
+                <div class="carousel-content container banner-info-2 bi-2 text-left">
+                    <h3 style="font-family: 'Courier New', Courier, monospace;">Wow Factor Standard</h3>
+                    <h5 style="font-family: 'Courier New', Courier, monospace;">Allow us to guide you through the innovative stress<br>
+                        free approach in finding your dream car.</h5>
+                    <a href="{% url 'service' %}" class="btn btn-lg btn-theme" style="border-radius: 10px;">Read more</a>
+                </div>
+            </div>
+            <div class="carousel-item banner-max-height item-bg">
+                <img class="d-block w-100 h-100" src="{% static 'img/car-7.jpg' %}" alt="banner">
+                <div class="carousel-content container banner-info-2 bi-2 text-left">
+                    <h3 style="font-family: 'Courier New', Courier, monospace;">Explore Your Dream Car</h3>
+                    <h5 style="font-family: 'Courier New', Courier, monospace;">Allow us to guide you through the innovative stress<br>
+                        free approach in finding your dream car.</h5>
+                    <a href="{% url 'service' %}" class="btn btn-lg btn-theme" style="border-radius: 10px;">Read more</a>
+                </div>
+            </div>
+            <div class="carousel-item banner-max-height item-bg">
                 <img class="d-block w-100 h-100" src="{% static 'img/car-1.jpg' %}" alt="banner">
                 <div class="carousel-content container banner-info-2 bi-2 text-left">
-                    <h3>Wow Factor Standard</h3>
-                    <h5>Allow us to guide you through the innovative stress<br>
-                        free approach in finding your dream car.</h5>
-                    <a href="{% url 'service' %}" class="btn btn-lg btn-theme">Read more</a>
-                </div>
-            </div>
-            <div class="carousel-item banner-max-height item-bg">
-                <img class="d-block w-100 h-100" src="{% static 'img/car-2.jpg' %}" alt="banner">
-                <div class="carousel-content container banner-info-2 bi-2 text-left">
-                    <h3>Explore Your Dream Car</h3>
-                    <h5>Allow us to guide you through the innovative stress<br>
-                        free approach in finding your dream car.</h5>
-                    <a href="{% url 'service' %}" class="btn btn-lg btn-theme">Read more</a>
-                </div>
-            </div>
-            <div class="carousel-item banner-max-height item-bg">
-                <img class="d-block w-100 h-100" src="{% static 'img/car-3.jpg' %}" alt="banner">
-                <div class="carousel-content container banner-info-2 bi-2 text-left">
                     <h3>We Are Wheel</h3>
-                    <h5>Allow us to guide you through the innovative stress<br>
+                    <h5 style="font-family: 'Courier New', Courier, monospace;">Allow us to guide you through the innovative stress<br>
                         free approach in finding your dream car.</h5>
-                    <a href="{% url 'service' %}" class="btn btn-lg btn-theme">Read more</a>
+                    <a href="{% url 'service' %}" class="btn btn-lg btn-theme" style="border-radius: 10px;">Read more</a>
                 </div>
             </div>
         </div>
         <!-- Search box 3 start -->
-        <div class="search-box-4 sb-8" style="background-color: rgba(0, 0, 0, 0.164) !important; border-color: red !important;">
+        <div class="search-box-4 sb-8" >
             <form action="{% url 'search' %}" method="">
                 <div class="form-group">
                     <input type="text" name="keyword" placeholder="Search by name" class="form-control">
@@ -75,10 +78,10 @@
                     </select>
                 </div>
                 <div class="range-slider clearfix">
-                                <label>Price</label>
+                                <label style="color: white;">Price</label>
                                 <div data-min="0" data-max="150000"  data-min-name="min_price" data-max-name="max_price" data-unit="USD" class="range-slider-ui ui-slider" aria-disabled="false"></div>
                                 <div class="clearfix"></div>
-                            </div>
+                             </div>
                 <div class="form-group">
                     <button class="btn btn-block button-theme btn-md">
                         <i class="fa fa-search"></i> Search

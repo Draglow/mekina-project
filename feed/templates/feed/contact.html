@@ -1,5 +1,5 @@
 {% extends 'feed/base.html' %}
-
+{% block title %} | Contact Us {% endblock%}
 {% block content %}
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
@@ -20,35 +20,38 @@
         <!-- Main title -->
         <div class="main-title text-center">
             <h1>Contact <span>Us</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;">For all inquiries related to our car seller website, please don't hesitate to contact us. Whether you have questions about listing your car, need assistance with the platform, or have any other concerns, our team is here to help. You can reach us via email, phone, or through the contact form on our website. We look forward to assisting you with all your car selling needs.</p>
         </div>
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="{% url 'contact' %}" method="post" enctype="multipart/form-data">
+            {% include 'component/message.html' %}
+
+          {% csrf_token %}
             <div class="row">
                 <div class="col-lg-7">
                     <div class="row">
                         <div class="col-md-6 text-left">
                             <div class="form-group name">
-                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                <input type="text" name="name" class="form-control" placeholder="Full Name" required style="color: black !important;">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group email">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                <input type="email" name="email" class="form-control" placeholder="Email" required style="color: black !important;">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group subject">
-                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required style="color: black !important;">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group number">
-                                <input type="text" name="phone" class="form-control" placeholder="Phone Number">
+                                <input type="text" name="phone" class="form-control" placeholder="Phone Number" style="color: black !important;">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group message">
-                                <textarea class="form-control" name="message" placeholder="Write message"></textarea>
+                                <textarea class="form-control" name="message" placeholder="Write message" style="color: black !important;"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -66,7 +69,7 @@
                             </div>
                             <div class="detail">
                                 <h5>Phone:</h5>
-                                <p><a href="#">0477 8556 552</a></p>
+                                <p><a href="#">+251965702356</a></p>
                             </div>
                         </div>
                         <div class="ci-box">
@@ -75,7 +78,7 @@
                             </div>
                             <div class="detail">
                                 <h5>Email:</h5>
-                                <p><a href="#">info@themevessel.com</a></p>
+                                <p><a href="#">dereje@21gmail.com</a></p>
                             </div>
                         </div>
                         <div class="ci-box">
@@ -84,7 +87,7 @@
                             </div>
                             <div class="detail">
                                 <h5>Web:</h5>
-                                <p><a href="#">info@themevessel.com</a></p>
+                                <p><a href="#">info@dereje.com</a></p>
                             </div>
                         </div>
                         <div class="ci-box mb-0">
@@ -93,7 +96,7 @@
                             </div>
                             <div class="detail">
                                 <h5>Fax:</h5>
-                                <p><a href="#">+0477 85X6 552</a></p>
+                                <p><a href="#">+251965702356</a></p>
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title></title>
+    <title>C A R S P A C E {% block title %} {% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" id="style_sheet" href="{% static 'css/skins/red.css' %}">
 
     <!-- Favicon icon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon" >
 
     <!-- Google fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
@@ -38,6 +38,71 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/ie10-viewport-bug-workaround.css' %}">
 
     <script  src= "{% static 's/ie-emulation-modes-warning.js' %}"></script>
+
+    <style>
+        .form-control,
+select.form-control.search-fields {
+  background-color: transparent;
+  border: none; /* Optional: to remove the border */
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  
+  border-radius: 10px;
+}
+
+.search-box-4.sb-8 {
+  border: 1px solid #000; /* Add a black border */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+  background-color: rgba(0, 0, 0, 0.637) !important;
+ 
+}
+
+.range-slider.clearfix .ui-slider .ui-slider-handle:before {
+  color: white !important; /* Set the color of the number to white */
+}
+
+
+
+select.form-control.search-fields option {
+    color: rgb(255, 255, 255) !important;
+    background-color:rgba(0, 0, 0, 0.548) !important;
+}
+
+
+.button-theme {
+ 
+  color: white; 
+  border: none; 
+  
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-family: 'Courier New', Courier, monospace;
+  
+  font-size: large;
+  transition-duration: 0.4s; 
+  cursor: pointer; 
+  border-radius: 10px; 
+}
+
+.button-theme:hover {
+  background-color: #c40303; 
+  color: white; 
+}
+
+#first{
+  border-color: #000000 !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+}
+
+#sel1{
+  color: black !important;
+}
+
+
+    </style>
 </head>
 <body>
 <div class="page_loader"></div>

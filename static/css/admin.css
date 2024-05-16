@@ -1,0 +1,45 @@
+#header{
+    background-color: #ffffff !important;
+    color: red !important;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px black;
+}
+
+
+
+#header a:link, #header a:visited{
+    color: black !important;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+element.style {
+    color: black;
+}
+
+
+#user-tools a, #logout-form button {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    color: black !important;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: white !important;
+}
+
+div.breadcrumbs{
+    background-color: black;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background-color: black;
+    color: #ffffff;
+
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+
+    color: white !important;
+
+    background-color: black !important;
+}

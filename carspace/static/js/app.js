@@ -272,10 +272,10 @@ $(function () {
                 event = event;
                 var currentMin = parseInt(ui.values[0], 10);
                 var currentMax = parseInt(ui.values[1], 10);
-                $(this).children(".min-value").text( currentMin + " " + unit);
-                $(this).children(".max-value").text(currentMax + " " + unit);
-                $(this).children(".current-min").val(currentMin);
-                $(this).children(".current-max").val(currentMax);
+                $(this).find(".min-value").text(currentMin + " " + unit).css("color", "white");
+                $(this).find(".max-value").text(currentMax + " " + unit).css("color", "white");
+                $(this).find(".current-min").val(currentMin);
+                $(this).find(".current-max").val(currentMax);
             }
         });
 
@@ -479,3 +479,8 @@ $(function () {
         }
     }).trigger("resize");
 })(jQuery);
+
+
+setTimeout(function(){
+    $('#message').fadeOut('slow');
+},4000)
