@@ -5,19 +5,19 @@
 <h1>Features</h1>
 
  <h3> 1. User Authentication:</h3> . Secure user registration and login system to ensure data privacy and security.
- <h5> 2. Car Listings:</h5> . Browse through a wide range of car listings with detailed information including make, model, year, price, mileage, and more.
- <h5> 3. Search and Filter:</h5> . Easily search for specific cars based on various criteria such as make, model, price range, etc.
- <h5> 4. Seller Profiles:</h5> . View detailed profiles of car sellers, including their ratings and reviews from previous buyers.
- <h5> 5. Messaging System:</h5> . Communicate directly with sellers to ask questions or negotiate deals.
- <h5> 6. Admin Panel:</h5> . Admin dashboard to manage users, listings, and resolve disputes if any.
+ <h3> 2. Car Listings:</h3> . Browse through a wide range of car listings with detailed information including make, model, year, price, mileage, and more.
+ <h3> 3. Search and Filter:</h3> . Easily search for specific cars based on various criteria such as make, model, price range, etc.
+ <h3> 4. Seller Profiles:</h3> . View detailed profiles of car sellers, including their ratings and reviews from previous buyers.
+ <h3> 5. Messaging System:</h3> . Communicate directly with sellers to ask questions or negotiate deals.
+ <h3> 6. Admin Panel:</h3> . Admin dashboard to manage users, listings, and resolve disputes if any.
 
 <h1>Technologies Used</h1>
 
-  <h4> 1. Frontend:</h4> HTML, CSS, JavaScript (React)
-  <h5> 2. Backend:</h5> Python (Django)
-  <h5> 3. Database:</h5> PostgreSQL
-  <h5> 4. Authentication:</h5> Django's built-in authentication system
-  <h5> 5. Other Tools:</h5> Git for version control
+  <h3> 1. Frontend:</h3> HTML, CSS, JavaScript (React)
+  <h3> 2. Backend:</h3> Python (Django)
+  <h3> 3. Database:</h3> PostgreSQL
+  <h3> 4. Authentication:</h3> Django's built-in authentication system
+  <h3> 5. Other Tools:</h3> Git for version control
 
 <h1>Installation</h1>
 
