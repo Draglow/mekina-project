@@ -146,8 +146,8 @@ SITE_ID=1
 
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER='draglow21@gmail.com'
-EMAIL_HOST_PASSWORD='gxjv maio yxhn qzwj'
+EMAIL_HOST_USER='enter your email'
+EMAIL_HOST_PASSWORD='enter your email host password'
 EMAIL_USE_TLS='True'
 
 
