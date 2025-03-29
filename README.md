@@ -1,3 +1,4 @@
+![Alt Text](mekina.png)
 
 # Django Car Seller Website
 
