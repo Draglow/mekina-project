@@ -2,6 +2,8 @@
 
 Welcome to our Django Car Seller Website! This platform is designed to streamline the process of buying and selling cars online, providing users with a seamless experience from browsing to purchasing.
 
+This is my first project, developed by following a tutorial, and serves as a foundational step in my journey as a web developer.
+
 ## Features
 
 - **User Authentication**: Secure registration and login system for buyers and sellers.
