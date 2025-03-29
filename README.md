@@ -1,4 +1,4 @@
-![Alt Text](mekina.png)
+![Alt Text](Mekina.png)
 
 # Django Car Seller Website
 
